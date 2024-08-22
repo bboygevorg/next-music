@@ -1,9 +1,11 @@
 import React from "react";
+
 import { cn } from "@/lib/utils";
 import { Container } from "./container";
 import Image from "next/image";
 import { Button } from "../ui";
 import { ArrowBigRight, ArrowRight, ShoppingCart, User } from "lucide-react";
+import { SearchInput } from "./search-input";
 
 interface Props {
   className?: string;
@@ -21,6 +23,10 @@ export const Header: React.FC<Props> = ({ className }) => {
               music in our hearts
             </p>
           </div>
+        </div>
+
+        <div className="mx-10 flex-1">
+          <SearchInput />
         </div>
 
         <div className="flex items-center gap-3">

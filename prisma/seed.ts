@@ -72,7 +72,7 @@ async function up() {
 
   const sax4 = await prisma.product.create({
     data: {
-      name: "D.Krenz SS-761 GL",
+      name: "D.Krenz SS-761GL",
       imageUrl:
         "https://saxbird.ru/upload/resize_cache/iblock/234/335_300_1/234266b70b21a725f8b9b07323f164d1.jpg",
       categoryId: 1,
