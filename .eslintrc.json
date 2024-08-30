@@ -1,6 +1,7 @@
 {
   "extends": "next/core-web-vitals",
   "rules": {
-    "@next/next/no0img-element": "off"
+    "@next/next/no0img-element": "off",
+    "jsx-a11y/alt-text": "off"
   }
 }
