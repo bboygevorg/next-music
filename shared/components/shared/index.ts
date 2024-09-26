@@ -13,4 +13,6 @@ export { SearchInput } from "./search-input";
 // export { ProductImage } from "./instrument-image";
 // export { ChoosePizzaForm } from "./choose-product-form";
 export { AccessoriesItem } from "./accessories-item";
+export { CartButton } from "./cart-button";
+export { CartDrawer } from "./cart-drawer";
 export * from "./modals";

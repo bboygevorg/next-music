@@ -1,5 +1,5 @@
 import { cn } from "@/shared/lib/utils";
-import React, { useEffect } from "react";
+import React from "react";
 import { Title } from ".";
 import { Button } from "../ui";
 import { Accessories, ProductItem } from "@prisma/client";
@@ -23,7 +23,7 @@ export const ChooseInstrumentForm: React.FC<Props> = ({
   accessories,
   items,
   onClickAddCart,
-}) => {
+}) => { 
   const textDetails = "Saxophone ";
 
   const [selectedAccessories, { toggle: addAccessories }] = useSet(
@@ -53,10 +53,6 @@ export const ChooseInstrumentForm: React.FC<Props> = ({
   //     setSize(Number(availablrSize.value) as InstrumentColor)
   //   }
   // }, [type])
-
-  const totalAccessories = accessories
-    .filter((accessories) => selectedAccessories.has(accessories.id))
-    .reduce((acc, accessories) => acc + accessories.price, 0);
 
   const handleClickAdd = () => {
     onClickAddCart?.();
